@@ -1,71 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TabuTrade – Trocas de Jogos de Tabuleiro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TabuTrade</title>
+  <!-- Link para o arquivo de estilos CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">🎲 TabuTrade</div>
-    <nav>
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Meu Perfil</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Seção de Filtros -->
+  <section id="filtros">
+    <input type="text" id="filtro-nome" placeholder="🔍 Buscar jogo..." />
+    <select id="filtro-municipio">
+      <option value="">Município</option>
+      <option value="sao-paulo">São Paulo</option>
+      <option value="santos">Santos</option>
+      <option value="curitiba">Curitiba</option>
+    </select>
+    <select id="filtro-categoria">
+      <option value="">Categoria</option>
+      <option value="estrategia">Estratégia</option>
+      <option value="familia">Família</option>
+      <option value="party">Party Game</option>
+    </select>
+  </section>
 
-  <main>
-    <section id="boas-vindas">
-      <h1>Bem-vindo ao TabuTrade</h1>
-      <p>Este é o protótipo do site de trocas de jogos de tabuleiro.</p>
-      <button id="publicar-oferta">📤 Publicar Oferta</button>
-    </section>
+  <!-- Seção de Ofertas -->
+  <section id="ofertas">
+    <h2>Ofertas Disponíveis</h2>
+    <div class="lista-ofertas" id="lista-ofertas">
+      <!-- As ofertas serão inseridas aqui dinamicamente -->
+    </div>
+  </section>
 
-    <section id="filtros">
-      <input type="text" placeholder="🔍 Buscar jogo..." />
-      <select>
-        <option value="">Município</option>
-        <option value="sao-paulo">São Paulo</option>
-        <option value="santos">Santos</option>
-        <option value="curitiba">Curitiba</option>
-      </select>
-      <select>
-        <option value="">Categoria</option>
-        <option value="estrategia">Estratégia</option>
-        <option value="familia">Família</option>
-        <option value="party">Party Game</option>
-      </select>
-    </section>
-
-    <section id="ofertas">
-      <h2>Ofertas Disponíveis</h2>
-      <div class="lista-ofertas">
-        <!-- Exemplo de oferta -->
-        <div class="oferta">
-          <img src="catan.jpg" alt="Catan" />
-          <div>
-            <h3>Catan</h3>
-            <p>Categoria: Estratégia</p>
-            <p>Município: São Paulo</p>
-            <button>Tenho Interesse</button>
-          </div>
-        </div>
-        <!-- Adicione mais ofertas conforme necessário -->
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 TabuTrade. Todos os direitos reservados.</p>
-    <a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a>
-  </footer>
-
+  <!-- Inclusão do arquivo de script JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
